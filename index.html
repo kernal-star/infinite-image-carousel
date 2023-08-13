@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 5px 5px 5px 5px;
+            margin: 0px;
+           
+            box-sizing: border-box;
+        }
+       body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: #121212;
+    }
+       .carousel
+       {
+        margin: 10px;
+        width: 500px;
+        display: flex;
+        overflow-x:scroll;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars- none;
+        box-shadow: 0px 0px 80px #f3c9ff2e;
+        border-radius: 10px;
+
+       }
+       .carousel::-webkit-scrollbar
+       {
+        width: 0;
+       }
+       .carousel_items
+       {
+        scroll-snap-align: right;
+        width: 500px;
+        height: 250px;
+        user-select: none;
+        pointer-events: none;
+       }
+       .carousel_img
+       {
+        display: block;
+        width: 500px;
+        height: 260px;
+        object-fit: cover;
+        user-select: none;
+        pointer-events: none;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="carousel">
+    <div class="carousel_items">
+        <img src="media/Untit design.png" alt="text" class="carousel_img">
+        <img src="media/Seuli Design.png" alt="text" class="carousel_img">
+        <img src="media/Seuli Design.png" alt="text" class="carousel_img">
+        <img src="media/Seuli Design.png" alt="text" class="carousel_img">
+    </div>
+    </div>
+</body>
+</html>
